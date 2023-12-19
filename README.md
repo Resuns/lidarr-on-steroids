@@ -46,7 +46,7 @@ docker run \
   -v <path>:/downloads \
   -v <path>:/music \
   --restart unless-stopped \
- Resuns/lidarr-on-steroids
+ resun83/lidarr-on-steroids
 ```
 
 ### Docker Compose
@@ -55,7 +55,7 @@ docker run \
 version: "3"
 services:
   lidarr:
-    image: Resuns/lidarr-on-steroids
+    image: resun83/lidarr-on-steroids
     restart: unless-stopped
     ports:
       - "8686:8686" # Lidarr web UI
