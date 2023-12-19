@@ -26,7 +26,7 @@ RUN mv /deemix-gui/dist/deemix-server /deemix-server
 
 FROM cr.hotio.dev/hotio/lidarr:pr-plugins-2.0.7.3848
 
-LABEL maintainer="Resuns"
+LABEL maintainer="resun83"
 
 ENV DEEMIX_SINGLE_USER=true
 ENV AUTOCONFIG=true
