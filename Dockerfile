@@ -34,11 +34,6 @@ ENV CLEAN_DOWNLOADS=true
 ENV PUID=1000
 ENV PGID=1000
 
-# flac2mp3
-RUN apk add --no-cache ffmpeg && \
-    rm -rf /var/lib/apt/lists/*
-COPY lidarr-flac2mp3/root/usr /usr
-
 # deemix
 COPY --from=deemix /deemix-server /deemix-server
 RUN chmod +x /deemix-server
