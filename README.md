@@ -81,16 +81,6 @@ In `AUTOCONFIG` mode (default), the only manual manipulation you'll only have to
 
 In case you don't want the automagical part (which is really the only value of this image), just set `AUTOCONFIG` environment variable to `false`.
 
-## Audio files conversion
-
-The image uses a modded version of lidarr-flac2mp3 allowing conversion from any format.
-
-To enable conversion on Lidarr import, create a new Connection to a Custom Script. You can also provide your own custom conversion script, see [lidarr-flac2mp3](https://github.com/Resuns/lidarr-flac2mp3) for more information.
-
-In `AUTOCONFIG`, if `FLAC2CUSTOM_ARGS` is set and no other connection to flac2* is found, this step done for you :
-
-!["Lidarr custom script settings"](https://github.com/Resuns/lidarr-on-steroids/raw/main/.assets/lidarr-custom-script.png "Lidarr custom script settings")
-
 ## Acknowledgment
 
 This project is just a compilation of various tools made possible by these projects :
